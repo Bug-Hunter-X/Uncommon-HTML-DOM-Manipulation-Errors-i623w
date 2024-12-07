@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>Some text</p>
+  </div>
+  <script>
+    // Attempting to access a non-existent attribute
+    const nonExistent = myDiv.getAttribute('nonExistentAttribute');
+    console.log(nonExistent); // Output: null
+
+    // Trying to access a property that is not an attribute
+    const innerHTML = myDiv.innerHTML;
+    console.log(innerHTML); // Output: "<p>Some text</p>" 
+
+    //Incorrect use of innerHTML with a JavaScript object
+    myDiv.innerHTML = {name: "John", age: 30}; // Error: Invalid attempt to destructure non-iterable instance
+    console.log(myDiv.innerHTML); // Throws an error in the console
+
+    //Incorrect way to use insertAdjacentHTML
+    myDiv.insertAdjacentHTML('beforebegin', {name: "John", age: 30}); //Error: Invalid attempt to destructure non-iterable instance 
+  </script>
+</body>
+</html>
