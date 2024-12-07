@@ -1,0 +1,3 @@
+# Uncommon HTML DOM Manipulation Errors
+
+This repository demonstrates some less frequently encountered errors when working with the HTML DOM.  The examples highlight issues related to accessing non-existent attributes, attempting to use JavaScript objects directly with innerHTML, and misuse of insertAdjacentHTML. The provided solution shows how to address these problems and improve your code robustness.  This is helpful for understanding how to correctly manipulate the DOM for creating dynamic and interactive web pages.
