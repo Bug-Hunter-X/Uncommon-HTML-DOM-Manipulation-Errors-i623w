@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>Some text</p>
+  </div>
+  <script>
+    //Safely check for attribute existence before accessing
+    const existingAttribute = myDiv.getAttribute('id');
+    console.log(existingAttribute); // Output: "myDiv"
+
+    // Correctly using innerHTML for string values
+    const newParagraph = "<p>This is a new paragraph</p>";
+    myDiv.innerHTML += newParagraph;  
+    console.log(myDiv.innerHTML);
+
+    //Correct way to use insertAdjacentHTML with string
+    const newDiv = '<div>New div inserted</div>';
+    myDiv.insertAdjacentHTML('beforebegin', newDiv);    
+  </script>
+</body>
+</html>
